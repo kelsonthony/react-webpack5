@@ -1,12 +1,12 @@
-import soma from './calc'
-import Heading from './components/heading'
+'use strict'
 
-console.log('Testing the webpack 2')
+import React from 'react'
+import { render } from 'react-dom'
+import { AppContainer } from 'react-hot-loader'
+import App from './app'
 
-soma(2, 4)
-soma(5, 5)
-
-//Loaders
-const heading = new Heading()
-
-heading.create('Titulo dinamico')
+render(
+  <AppContainer>
+    <App />
+  </AppContainer>,
+  document.querySelector('[data-js="app"]'))

@@ -6,3 +6,11 @@ react-webpack5
 npx webpack
 
 https://webpack.js.org/concepts/
+
+
+loaders: [{
+            test: /\.js$/,
+            exclude: /node_modules/,
+            include: /src/,
+            loader: 'babel'
+        }],
